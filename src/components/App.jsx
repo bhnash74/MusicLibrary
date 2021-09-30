@@ -1,10 +1,9 @@
-import { render } from '@testing-library/react';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
 import MusicTable from './MusicTable/MusicTable';
 import NavBar from './NavBar/NavBar';
-
+import SearchBar from './SearchBar/SearchBar';
 
 class App extends Component{
 
@@ -26,8 +25,10 @@ class App extends Component{
           
 
         <div>
-            <MusicTable songlist= {this.state.songs} />,
-            <NavBar />
+            <NavBar /> 
+            <SearchBar />
+            <MusicTable songlist= {this.state.songs} />
+         
             
         </div>
         );

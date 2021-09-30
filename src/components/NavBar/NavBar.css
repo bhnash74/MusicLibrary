@@ -1,0 +1,9 @@
+#topnav {
+    flex-direction: row;
+    width: 100%;
+}
+
+li {
+    position: relative;
+    padding-left: 50px;
+}
