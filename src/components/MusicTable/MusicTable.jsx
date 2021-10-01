@@ -17,8 +17,8 @@ function MusicTable(props) {
                 <tbody>
                     {props.songlist.map((song) =>{
                     return(
-                        <tr>
-                            <td scope="row">{song.title}</td>
+                        <tr key={song.id}>
+                            <td>{song.title}</td>
                             <td>{song.album}</td>
                             <td>{song.artist}</td>
                             <td>{song.genre}</td>
