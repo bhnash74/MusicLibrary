@@ -3,7 +3,7 @@ import axios from 'axios';
 import MusicTable from './MusicTable/MusicTable';
 import NavBar from './NavBar/NavBar';
 import SearchBar from './SearchBar/SearchBar';
-
+import SongForm from './SongForm/SongForm';
 class App extends Component{
 
     constructor () {
@@ -39,6 +39,8 @@ class App extends Component{
             <NavBar /> 
             <SearchBar handleSearch= {this.handleSearch}/>
             <MusicTable songlist= {filterSearch} />
+            <SongForm />
+
          
             
         </div>
