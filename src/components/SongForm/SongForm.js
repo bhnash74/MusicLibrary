@@ -8,26 +8,26 @@ function SongForm(props) {
                 <div className= "row form-group">
                     <div className= "col-md-4">
                         <div className="row">
-                            <input type="text" className="form-control" onChange={props.handleSearch} placeholder="Title"/>
+                            <input type="text" className="form-control" onChange={props.title} placeholder="Title"/>
                         </div>
                         <div className="row">
-                            <input type="text" className="form-control" onChange={props.handleSearch} placeholder="Genre"/>
+                            <input type="text" className="form-control" onChange={props.genre} placeholder="Genre"/>
                         </div>
                     </div>
                     <div className="col-md-4">
                         <div className="row">
-                            <input type="text" className="form-control" onChange={props.handleSearch} placeholder="Album"/>
+                            <input type="text" className="form-control" onChange={props.album} placeholder="Album"/>
                         </div>
                         <div className="row">
-                            <input type="text" className="form-control" onChange={props.handleSearch} placeholder="Artist"/>
+                            <input type="text" className="form-control" onChange={props.artist} placeholder="Artist"/>
                         </div>
                     </div>
                     <div className="col-sm-4">
                         <div className="row">
-                            <input type="text" className="form-control" onChange={props.handleSearch} placeholder="Release Date"/>
+                            <input type="text" className="form-control" onChange={props.date} placeholder="Release Date"/>
                         </div>
                         <div className="row">
-                            <button type= "button" className="btn btn-dark">Submit</button>
+                            <button type= "button" className="btn btn-dark" onSubmit={props.inputSong}>Submit</button>
                         </div>
                     </div>
                 </div>
